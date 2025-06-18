@@ -17,7 +17,7 @@ A simple Python script to check if NYSC registration is open by scraping the off
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/nysc-ns-lite.git
+git clone https://github.com/TheKingsident/nysc-ns-lite.git
 cd nysc-ns-lite
 ```
 
