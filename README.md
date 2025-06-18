@@ -50,15 +50,6 @@ You will see output indicating whether NYSC registration is open or closed.
 
 ---
 
-## 📝 How It Works
-
-- The script fetches the NYSC portal page.
-- It searches the page text for the keyword you provided in `.env`.
-- If the keyword is **not found**, it means registration is open.
-- If the keyword **is found**, registration is still closed.
-
----
-
 ## ⚠️ Disclaimer
 
 This script is for personal use and educational purposes only.  
