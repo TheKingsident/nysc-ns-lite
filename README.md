@@ -1,35 +1,72 @@
 # NYSC Registration Checker (Lite)
 
-This is a simple Python script that checks the NYSC portal to see if registration is open.
+A simple Python script to check if NYSC registration is open by scraping the official NYSC portal.
 
-## 🔧 How to Use
+---
 
-1. Clone this repo:
-git clone https://github.com/yourusername/nysc-alert-lite.git
-cd nysc-alert-lite
+## 🚀 Features
 
-markdown
-Copy
-Edit
+- Checks the NYSC portal for the registration status.
+- Simple command-line output: tells you if registration is open or closed.
+- Easy to configure with your own keyword (no code changes needed).
 
-2. Install the requirements:
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/nysc-ns-lite.git
+cd nysc-ns-lite
+```
+
+### 2. Install Dependencies
+
+Make sure you have Python 3 installed. Then run:
+
+```bash
 pip install -r requirements.txt
+```
 
-markdown
-Copy
-Edit
+### 3. Configure the Keyword
 
-3. Run the script:
+Create a `.env` file in the project directory (if it doesn't exist) and add the line below.  
+**The value should match the text shown on the NYSC portal when registration is closed.**
+
+```
+KEYWORD=No Active Registration
+```
+
+*Do not use quotes. Copy the text exactly as it appears on the website.*
+
+### 4. Run the Script
+
+```bash
 python checker.py
+```
 
+You will see output indicating whether NYSC registration is open or closed.
 
-It will output whether NYSC registration is currently open.
+---
+
+## 📝 How It Works
+
+- The script fetches the NYSC portal page.
+- It searches the page text for the keyword you provided in `.env`.
+- If the keyword is **not found**, it means registration is open.
+- If the keyword **is found**, registration is still closed.
+
+---
 
 ## ⚠️ Disclaimer
 
-This is a simplified version of a more complete notification service used for personal projects.  
-No notifications are sent from this version.
+This script is for personal use and educational purposes only.  
+It does not send notifications or store any personal data.
 
-## 📬 Want to Get Notified?
+---
 
-If you'd prefer automatic alerts via email or WhatsApp, contact hello@kingsleyusa.dev to get access to the full version.
+## 📬 Want Automatic Alerts?
+
+If you'd like to receive automatic notifications (email or WhatsApp) when registration opens,  
+contact me on [hello@kingsleyusa.dev](mailto:hello@kingsleyusa.dev) for access to the full version.
